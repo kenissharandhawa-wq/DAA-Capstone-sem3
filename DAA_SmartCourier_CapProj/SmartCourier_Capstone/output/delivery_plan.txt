@@ -1,0 +1,37 @@
+SMARTCOURIER - DELIVERY PLANNING RESULT
+==============================================
+Input parcels: 10
+Vehicle capacity: 15 kg
+
+PRIORITIZED PARCELS
+P03: C, 3 kg, priority 5, deadline 2 h
+P01: A, 4 kg, priority 5, deadline 3 h
+P08: D, 4 kg, priority 5, deadline 3 h
+P05: E, 2 kg, priority 4, deadline 4 h
+P02: B, 6 kg, priority 4, deadline 5 h
+P10: F, 2 kg, priority 4, deadline 7 h
+P07: B, 3 kg, priority 3, deadline 6 h
+P04: D, 5 kg, priority 3, deadline 8 h
+P09: E, 6 kg, priority 2, deadline 10 h
+P06: F, 7 kg, priority 2, deadline 12 h
+
+OPTIMAL BOX SELECTION (0/1 KNAPSACK)
+Selected: P03, P01, P08, P05, P10
+Total weight: 15 kg
+Total value score: 2531
+
+DELIVERY ROUTE (NEAREST NEIGHBOR HEURISTIC)
+Depot -> A -> C -> D -> E -> F -> Depot
+Total distance: 26.00 km
+
+Depot -> A: 4.00 km via Depot -> A
+A -> C: 5.00 km via A -> C
+C -> D: 2.00 km via C -> D
+D -> E: 3.00 km via D -> E
+E -> F: 2.00 km via E -> F
+F -> Depot: 10.00 km via F -> Depot
+
+RUNTIME (MILLISECONDS)
+Sorting: 0.0490
+Knapsack DP: 0.1098
+Routing: 0.6402
